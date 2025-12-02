@@ -1,0 +1,62 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&family=Science+Gothic:wght@100..900&display=swap');
+
+body{
+    background: url(./Img/Background.jpg) no-repeat fixed ;
+    background-size: cover ;
+    font-family: "Playwrite NO", cursive;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    padding: min(2rem, 20%);
+    background: rgba(255, 132, 132, 0.5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px 3px rgb(255, 122, 122);
+    text-shadow: 3px 3px 2px #700000;
+}
+
+main{
+    padding: 2rem;
+}
+
+.first{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: min(1rem, 10vw);
+}
+
+img{
+    width: 100%;
+}
+
+article{
+    background: rgba(10, 10, 10, .5);
+}
+
+.body{
+    padding: 1rem;
+}
+/************************************************ Második Szekció**********/
+.second{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    width: 90%;
+    gap: min(1rem, 10vw);
+    padding: 1rem 0;
+}
+
+.second article:first-child{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-content: center;
+    line-height: 2;
+}
